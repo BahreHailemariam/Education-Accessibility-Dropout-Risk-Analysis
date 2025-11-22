@@ -168,3 +168,62 @@ model.fit(X_train, y_train)
 preds = model.predict_proba(X_test)[:,1]
 ```
 
+## 📊 4. Power BI Dashboard Overview
+### 📄 Pages
+**1️⃣ Education Access Overview**
+
+- Enrollment vs capacity
+
+- Gender & SES accessibility gaps
+
+- Attendance distribution
+
+- School infrastructure index
+
+**2️⃣ Dropout Risk Monitoring**
+
+- At-risk student count
+
+- Risk distribution (low, medium, high)
+
+- Top predictors (feature importance)
+
+- Student-level indicators
+
+**3️⃣ Equity & Inclusion Analytics**
+
+- Disability support gap
+
+- Rural vs urban disparity
+
+- Socio-economic segmentation
+
+- Gender disparity in performance & attendance
+
+**4️⃣ School & District Performance**
+
+- Teacher ratio
+
+- Facility quality score
+
+- Year-over-year dropout trend
+
+**5️⃣ Intervention Planner**
+
+- Students needing support
+
+- Recommended tutoring sessions
+
+- Transportation support
+
+- Meal program targeting
+
+🧪 Sample DAX Measures
+Attendance Rate
+Attendance Rate = DIVIDE(SUM(Students[DaysPresent]), SUM(Students[DaysTotal]))
+
+Dropout Rate
+Dropout Rate = AVERAGE(Students[dropout_risk])
+
+High Risk Count
+High Risk Students = CALCULATE(COUNTROWS(Students), Students[risk_score] >= 0.8)
