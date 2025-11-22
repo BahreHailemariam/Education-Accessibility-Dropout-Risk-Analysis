@@ -96,3 +96,33 @@ df['attendance_rate'] = df['days_present'] / df['days_total']
 df['is_low_income'] = df['income_level'].apply(lambda x: 1 if x == 'low' else 0)
 ```
 
+## 🧠 2. Feature Engineering
+**Student-level:**
+
+- Attendance trend features
+
+- Dropout label (0/1)
+
+- Academic difficulty index
+
+- Transition risk (grade-to-grade stability)
+
+- Distance accessibility index
+
+**School-level:**
+
+- Student–teacher ratio
+
+- Infrastructure score
+
+- Accessibility score
+
+- District-level dropout history
+
+**Interaction Features:**
+
+- SES × attendance
+
+- Parent-literacy × performance
+
+- Gender × transportation accessibility
