@@ -307,3 +307,8 @@ streamlit run scripts/app.py
 - Reproducible ETL pipeline
 
 - Documentation & workflow specs
+
+## 🙌 Contributing
+
+Pull requests are welcome.<br />
+Please open an issue for feature requests or bug fixes.
