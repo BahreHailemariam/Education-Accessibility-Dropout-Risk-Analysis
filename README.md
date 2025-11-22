@@ -126,3 +126,45 @@ df['is_low_income'] = df['income_level'].apply(lambda x: 1 if x == 'low' else 0)
 - Parent-literacy × performance
 
 - Gender × transportation accessibility
+
+## 🤖 3. Machine Learning Modeling
+
+Models used:
+
+- **Logistic Regression**
+
+- **Random Forest**
+
+- **XGBoost Classifier**
+
+- **Neural network (optional)**
+
+Target:
+
+```csharp
+
+dropout_risk (0 = retained, 1 = dropped out)
+
+```
+
+Evaluated using:
+
+- ROC-AUC
+
+- F1 Score
+
+- Confusion Matrix
+
+- Precision-Recall Curve
+
+Example model snippet:
+
+```python
+
+from xgboost import XGBClassifier
+
+model = XGBClassifier(max_depth=5, learning_rate=0.1)
+model.fit(X_train, y_train)
+preds = model.predict_proba(X_test)[:,1]
+```
+
