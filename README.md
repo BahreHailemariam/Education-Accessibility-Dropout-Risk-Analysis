@@ -261,3 +261,36 @@ Train ML classification models.
 **✔ Visualization**
 
 Power BI dashboards with KPIs and risk indicators.
+
+## 🚀 How to Run the Project
+**Install dependencies**
+
+```bash
+
+pip install -r requirements.txt
+
+```
+**Run ETL**
+
+```bash
+
+python scripts/load_data.py
+python scripts/clean_data.py
+python scripts/feature_engineering.py
+
+```
+
+**Train model**
+```bash
+
+python scripts/train_model.py
+
+```
+**Launch app (optional)**
+
+```bash
+
+streamlit run scripts/app.py
+
+```
+
