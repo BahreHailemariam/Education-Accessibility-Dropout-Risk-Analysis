@@ -218,12 +218,17 @@ preds = model.predict_proba(X_test)[:,1]
 
 - Meal program targeting
 
-🧪 Sample DAX Measures
-Attendance Rate
+## 🧪 Sample DAX Measures
+**Attendance Rate**
+
+```DAX
 Attendance Rate = DIVIDE(SUM(Students[DaysPresent]), SUM(Students[DaysTotal]))
-
-Dropout Rate
+```
+**Dropout Rate**
+```DAX
 Dropout Rate = AVERAGE(Students[dropout_risk])
-
-High Risk Count
+```
+**High Risk Count**
+```DAX
 High Risk Students = CALCULATE(COUNTROWS(Students), Students[risk_score] >= 0.8)
+```
