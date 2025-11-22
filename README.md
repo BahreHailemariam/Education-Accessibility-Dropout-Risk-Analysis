@@ -57,3 +57,21 @@ Education_Dropout_Risk_Analysis/
 ├── requirements.txt
 └── README.md
 ```
+## 🧮 Data Sources
+**Typical datasets:**
+
+- **Student Profiles** (age, gender, SES level, disabilities)
+
+- **Academic Performance** (grades, test scores)
+
+- **Attendance Records**
+
+- **Accessibility Factors** (transportation, distance to school)
+
+- **School Infrastructure** (teachers, facilities, ratios)
+
+- **Household Factors** (literacy of parents, income)
+
+- **Community Data** (crime rates, local resources)
+
+  
