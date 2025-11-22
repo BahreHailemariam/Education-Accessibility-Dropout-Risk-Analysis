@@ -232,3 +232,32 @@ Dropout Rate = AVERAGE(Students[dropout_risk])
 ```DAX
 High Risk Students = CALCULATE(COUNTROWS(Students), Students[risk_score] >= 0.8)
 ```
+
+## 🔄 5. Workflow Summary
+**✔ Extract**
+
+Import student, teacher, and community datasets.
+
+**✔ Transform**
+
+Clean & standardize using SQL:
+
+- Normalize SES categories
+
+- Fix invalid dates
+
+- Remove duplicates
+
+- Create accessibility indexes
+
+**✔ Feature Engineering**
+
+Combine performance, attendance, SES, and school data.
+
+**✔ Modeling**
+
+Train ML classification models.
+
+**✔ Visualization**
+
+Power BI dashboards with KPIs and risk indicators.
