@@ -294,3 +294,16 @@ streamlit run scripts/app.py
 
 ```
 
+## 📦 Key Deliverables
+
+- ML-powered dropout risk model
+
+- Feature store with accessibility & SES indicators
+
+- SQL-engineered KPI tables
+
+- Power BI Dashboard
+
+- Reproducible ETL pipeline
+
+- Documentation & workflow specs
