@@ -74,4 +74,25 @@ Education_Dropout_Risk_Analysis/
 
 - **Community Data** (crime rates, local resources)
 
-  
+## 🧼 1. Data Cleaning
+
+Performed in SQL + Python:
+
+- Fix missing demographic data
+
+- Normalize categorical fields (grade, gender, SES)
+
+- Remove duplicates
+
+- Convert attendance patterns into usable numerical features
+
+- Fix school and student IDs
+
+- Remove inconsistent grade entries
+
+Example Python snippet:
+```python
+df['attendance_rate'] = df['days_present'] / df['days_total']
+df['is_low_income'] = df['income_level'].apply(lambda x: 1 if x == 'low' else 0)
+```
+
