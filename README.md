@@ -16,3 +16,44 @@ The goal is to enable education ministries, NGOs, and school administrators to i
 ✔ Predict completion likelihood using classification models<br />
 ✔ Create dashboards to help policymakers take action<br />
 ✔ Produce SQL-based feature engineering for repeatability
+
+## 🧱 Project Architecture
+
+```powershel
+Data Sources → SQL Cleaning → Feature Engineering → ML Modeling → Insights → Dashboards
+```
+
+📂 Folder Structure
+```pgsql
+Education_Dropout_Risk_Analysis/
+│
+├── data/
+│   ├── raw/
+│   └── processed/
+│
+├── scripts/
+│   ├── load_data.py
+│   ├── clean_data.py
+│   ├── feature_engineering.py
+│   ├── train_model.py
+│   └── app.py  # optional Streamlit dashboard
+│
+├── sql/
+│   ├── 01_create_tables.sql
+│   ├── 02_data_cleaning.sql
+│   ├── 03_feature_engineering.sql
+│   ├── 04_kpis_metrics.sql
+│   └── 05_views_for_powerbi.sql
+│
+├── dashboard/
+│   └── PowerBI_Report_Spec.md
+│
+├── docs/
+│   └── Workflow_Spec.md
+│
+├── models/
+│   └── dropout_risk_model.pkl
+│
+├── requirements.txt
+└── README.md
+```
