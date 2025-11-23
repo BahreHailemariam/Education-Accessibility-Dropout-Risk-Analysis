@@ -234,7 +234,7 @@ Visible attributes:
 
 Map of students with:
 
-    - 5 km walk
+   - 5 km walk
 
    - No school bus availability
 
