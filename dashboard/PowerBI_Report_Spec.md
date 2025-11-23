@@ -234,21 +234,42 @@ Visible attributes:
 
 Map of students with:
 
-- 5 km walk
+    - 5 km walk
 
-- No school bus availability
+   - No school bus availability
 
-- High risk + long commute
+   - High risk + long commute
 
 ✔ **Meal Program Targeting**
 
 Table of students with:
 
-- Low SES
+   - Low SES
 
-- Poor nutrition indicators
+   - Poor nutrition indicators
 
-- Attendance < 80%
+   - Attendance < 80%
 
 - KPI: predicted attendance increase after meal support
 
+🔧 Optional DAX Measures to Include
+Dropout Risk Category
+```DAX
+Risk Category =
+SWITCH(
+    TRUE(),
+    Students[risk_score] >= 0.66, "High",
+    Students[risk_score] >= 0.33, "Medium",
+    "Low"
+)
+```
+Infrastructure Index
+```DAX
+Infrastructure Index =
+AVERAGEX(
+    VALUES(School[SchoolID]),
+    (School[TeachersPerStudent] * 0.3) +
+    (School[FacilityScore] * 0.4) +
+    (School[AccessScore] * 0.3)
+)
+```
