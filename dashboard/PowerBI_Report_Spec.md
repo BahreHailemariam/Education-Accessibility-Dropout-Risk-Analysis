@@ -35,11 +35,11 @@ Distribution graph of attendance (%)
 
 - Drilldown by:
 
-- Grade level
+   - Grade level
 
-- Gender
+   - Gender
 
-- SES category
+   - SES category
 
 ✔ **School Infrastructure Index**
 
@@ -53,10 +53,67 @@ A composite KPI combining:
 
 - Internet connection
 
-- Disability support rooms
+- Disability support rooms<br />
 Shown as:
 
 - Choropleth map
 
 - KPI trend card (index YoY change)
 
+
+## 2️⃣ Dropout Risk Monitoring
+### 🎯 Purpose
+
+Highlight students at highest risk and show predictors influencing dropout patterns.
+
+### 🗂️ Key Visuals
+✔ **At-Risk Student Count**
+
+- KPI card showing total at-risk students
+
+- Breakdown:
+
+    - Low Risk: Probability < 0.33
+
+    - Medium Risk: 0.33–0.66
+
+    - High Risk: > 0.66
+
+✔ **Risk Distribution**
+
+- Donut/pie chart: percentage in each risk category
+
+- Bar chart: risk categories across regions or schools
+
+✔ **Top Predictors (Feature Importance)**
+
+Feature importance bar chart (XGBoost/Random Forest)
+Common predictors include:
+
+- Attendance decline
+
+- Low grades in core subjects
+
+- SES level
+
+- Distance to school
+
+- Parent literacy
+
+✔ **Student-Level Risk Indicators**
+
+Table with:
+
+   - Student ID
+
+   - Name (optional / pseudonymized)
+
+   - Attendance rate
+
+   - Performance index
+
+   - SES level
+
+   - Risk score
+
+   - Recommended interventions
