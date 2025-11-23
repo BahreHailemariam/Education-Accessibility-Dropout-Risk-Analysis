@@ -198,3 +198,57 @@ Displayed as:
 
 - Annotation of policy changes or major events
 
+## 5️⃣ Intervention Planner
+### 🎯 Purpose
+
+Help administrators assign support resources efficiently and prevent dropouts before they occur.
+
+### 🗂️ Key Visuals
+✔ **Students Needing Support**
+
+Filters:
+
+- High risk only
+
+- Attendance decline
+
+- Low income
+
+- Long-distance travel
+
+Visible attributes:
+
+- Risk score
+
+- Suggested intervention
+
+- Predicted improvement
+
+✔ **Recommended Tutoring Sessions**
+
+- Matrix of subjects × student counts
+
+- Drill-down: school → class → student
+
+✔ **Transportation Support**
+
+Map of students with:
+
+- 5 km walk
+
+- No school bus availability
+
+- High risk + long commute
+
+✔ **Meal Program Targeting**
+
+Table of students with:
+
+- Low SES
+
+- Poor nutrition indicators
+
+- Attendance < 80%
+
+- KPI: predicted attendance increase after meal support
+
