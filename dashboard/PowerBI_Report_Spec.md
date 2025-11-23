@@ -118,40 +118,43 @@ Table with:
 
    - Recommended interventions
 
-3️⃣ Equity & Inclusion Analytics
-🎯 Purpose
+## 3️⃣ Equity & Inclusion Analytics
+### 🎯 Purpose
 
 Understand equity gaps by socio-economic, demographic, and geographic factors.
 
-🗂️ Key Visuals
-✔ Disability Support Gap
+### 🗂️ Key Visuals
+✔  **Disability Support Gap**
 
-KPI: % of students with disabilities lacking adequate resources
+- KPI: % of students with disabilities lacking adequate resources
 
-Bar chart: resources vs needs by school
+- Bar chart: resources vs needs by school
 
-✔ Rural vs Urban Accessibility Gap
+✔  **Rural vs Urban Accessibility Gap**
 
-Map visualization showing dropout risk differences
+- Map visualization showing dropout risk differences
 
-Transportation access levels
+- Transportation access levels
 
-Teacher availability comparison
+- Teacher availability comparison
 
-✔ Socio-Economic Segmentation
+✔ **Socio-Economic Segmentation**
 
-Tree map showing enrollment by SES
+- Tree map showing enrollment by SES
 
-Dropout rate by SES group
+- Dropout rate by SES group
 
-Heatmap of SES × attendance
+- Heatmap of SES × attendance
 
-✔ Gender Disparity in Performance & Attendance
+✔ **Gender Disparity in Performance & Attendance**
 
-Line chart of gender-based grade averages
+- Line chart of gender-based grade averages
 
-Box plot showing attendance variation by gender
+- Box plot showing attendance variation by gender
 
 Gap index KPI:
+```PGSQL
 
 Gender Gap Index = Avg(Female Score) – Avg(Male Score)
+
+```
