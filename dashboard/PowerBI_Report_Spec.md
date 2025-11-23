@@ -158,3 +158,43 @@ Gap index KPI:
 Gender Gap Index = Avg(Female Score) – Avg(Male Score)
 
 ```
+## 4️⃣ School & District Performance
+### 🎯 Purpose
+
+Provide an operations-focused view for administrators and district leaders.
+
+### 🗂️ Key Visuals
+✔ **Teacher Ratio**
+
+- Teachers per 1,000 students
+
+- School-wise bar chart
+
+- Region comparison map
+
+✔ **Facility Quality Score**
+
+Calculated using weighted metrics:
+
+- Classroom condition
+
+- Water & sanitation
+
+- ICT infrastructure
+
+- Teaching materials availability
+
+Displayed as:
+
+- School ranking table
+
+- Heatmap by district
+
+✔ **Year-over-Year Dropout Trend**
+
+- Line chart showing dropout rate over the last 5–10 years
+
+- Filter: region, school, grade
+
+- Annotation of policy changes or major events
+
